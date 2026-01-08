@@ -34,6 +34,22 @@
             padding: 15mm 18mm;
         }
 
+        /* Page break support for multi-page CVs */
+        .page-break {
+            page-break-before: always;
+            break-before: page;
+            margin-top: 0;
+            padding-top: 15mm;
+        }
+
+        @media screen {
+            .page-break {
+                border-top: 2px dashed #bdc3c7;
+                margin-top: 20px;
+                padding-top: 20px;
+            }
+        }
+
         /* Print styles */
         @media print {
             body {
@@ -268,7 +284,7 @@
                 <div class="contact-grid">
                     <div class="contact-item">
                         <span>📍</span>
-                        <span>Indonesia</span>
+                        <span>Jakarta, Indonesia</span>
                     </div>
                     <div class="contact-item">
                         <span>🌐</span>
@@ -302,21 +318,84 @@
             </p>
         </section>
 
+        <!-- Education -->
+        <section class="section">
+            <h2 class="section-title">Education</h2>
+            <div class="entry">
+                <div class="entry-header">
+                    <span class="entry-title">Bina Nusantara University (BINUS)</span>
+                    <span class="entry-date">Expected 2025</span>
+                </div>
+                <p class="entry-subtitle">Bachelor of Computer Science</p>
+                <p class="entry-description">Jakarta, Indonesia</p>
+            </div>
+        </section>
+
+        <!-- Work Experience -->
+        <section class="section">
+            <h2 class="section-title">Work Experience</h2>
+            
+            <div class="entry">
+                <div class="entry-header">
+                    <span class="entry-title">Software Development Engineering Intern</span>
+                    <span class="entry-date">Present</span>
+                </div>
+                <p class="entry-subtitle">IDEMIA Identity & Security Technologies (IST) — Jakarta, Indonesia</p>
+                <ul class="entry-list">
+                    <li>Focus on test engineering and quality assurance for identity and security solutions</li>
+                    <li>Develop and maintain automated testing frameworks and test suites</li>
+                    <li>Collaborate with development teams on software testing strategies and implementation</li>
+                    <li>Work with APDU Protocol and Javacard technologies for smart card applications</li>
+                    <li>Contribute to development tasks alongside primary test engineering responsibilities</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Organizational Experience -->
+        <section class="section">
+            <h2 class="section-title">Organizational Experience</h2>
+            
+            <div class="entry">
+                <div class="entry-header">
+                    <span class="entry-title">Regional Treasury</span>
+                </div>
+                <p class="entry-subtitle">Nippon Club — Jakarta, Indonesia</p>
+                <ul class="entry-list">
+                    <li>Managed financial operations and treasury functions for the regional organization</li>
+                    <li>Oversaw budgeting, expense tracking, and financial reporting</li>
+                    <li>Active member and activist contributing to organizational initiatives</li>
+                </ul>
+            </div>
+
+            <div class="entry">
+                <div class="entry-header">
+                    <span class="entry-title">Regional Education Manager</span>
+                </div>
+                <p class="entry-subtitle">HIMTI (Himpunan Mahasiswa Teknik Informatika) — BINUS University</p>
+                <ul class="entry-list">
+                    <li>Led educational programs and initiatives for the informatics student association</li>
+                    <li>Organized workshops, seminars, and learning events for students</li>
+                    <li>Coordinated with faculty and external partners on educational collaborations</li>
+                    <li>Active activist promoting technology education and student development</li>
+                </ul>
+            </div>
+        </section>
+
         <!-- Technical Skills -->
         <section class="section">
             <h2 class="section-title">Technical Skills</h2>
             <div class="skills-grid">
                 <div class="skill-category">
                     <span class="skill-label">Programming Languages:</span>
-                    <span class="skill-items">Python, Dart, JavaScript, TypeScript, C, C++, Rust, GDScript, Java</span>
+                    <span class="skill-items">Python, Dart, JavaScript, TypeScript, Java, Jython, C, C++, Rust, GDScript</span>
                 </div>
                 <div class="skill-category">
                     <span class="skill-label">Frameworks & Libraries:</span>
-                    <span class="skill-items">Flutter, React.js, Node.js, Godot Engine</span>
+                    <span class="skill-items">Flutter, React.js, Next.js, Node.js, Flask, Godot Engine, Chrome Extension APIs</span>
                 </div>
                 <div class="skill-category">
                     <span class="skill-label">Data & Analysis:</span>
-                    <span class="skill-items">Jupyter Notebook, Pandas, NumPy, yfinance, YOLO</span>
+                    <span class="skill-items">Jupyter Notebook, Pandas, NumPy, yfinance, YOLO, CNN</span>
                 </div>
                 <div class="skill-category">
                     <span class="skill-label">Security & Cryptography:</span>
@@ -327,11 +406,14 @@
                     <span class="skill-items">Git, GitHub Actions, Vercel, CI/CD Pipelines</span>
                 </div>
                 <div class="skill-category">
-                    <span class="skill-label">Platforms:</span>
-                    <span class="skill-items">Windows, Linux, Android, macOS/iOS, Web</span>
+                    <span class="skill-label">Platforms & Protocols:</span>
+                    <span class="skill-items">Windows, Linux, Android, macOS/iOS, Web, APDU Protocol, Javacard</span>
                 </div>
             </div>
         </section>
+
+        <!-- Page 2: Projects -->
+        <div class="page-break"></div>
 
         <!-- Featured Projects -->
         <section class="section">
@@ -402,6 +484,22 @@
                     <span class="skill-label">TaskSpring:</span>
                     <span class="skill-items">Gamified task management with virtual garden (JavaScript)</span>
                 </div>
+                <div class="skill-category">
+                    <span class="skill-label">Pinoted:</span>
+                    <span class="skill-items">Note-taking application with sticky notes that stay on screen (Java)</span>
+                </div>
+                <div class="skill-category">
+                    <span class="skill-label">Color Picker Extension:</span>
+                    <span class="skill-items">Chrome extension for precise color selection with HEX/RGB toggling</span>
+                </div>
+                <div class="skill-category">
+                    <span class="skill-label">Discord RPC:</span>
+                    <span class="skill-items">Rich presence tool with dynamic application cycling and GIF support</span>
+                </div>
+                <div class="skill-category">
+                    <span class="skill-label">K380-Fn-Lock:</span>
+                    <span class="skill-items">Logitech K380 function key lock utility using hotkey (TeX/AutoHotkey)</span>
+                </div>
             </div>
         </section>
 
@@ -422,7 +520,7 @@
         <section class="section">
             <h2 class="section-title">Interests</h2>
             <p class="summary">
-                Post-Quantum Cryptography, Financial Technology, Game Development, Open Source Development, Machine Learning, Cross-Platform Application Development
+                Post-Quantum Cryptography, Financial Technology, Game Development, Open Source Development, Machine Learning, Cross-Platform Application Development, Astrophysics, Material Science, Frontend Design &amp; UX, IoT Projects, 3D Animation &amp; Illustration (Blender3D, Pixel Art)
             </p>
         </section>
     </div>
